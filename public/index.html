@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intobones – character to rig-ready parts</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h1>Intobones</h1>
+      <p>One character image in. Separate body parts out, ready for bones rigging.</p>
+    </div>
+    <nav class="stepper" id="stepper" aria-label="Steps"></nav>
+  </header>
+  <main class="layout">
+    <section id="panel-connect" class="panel" data-step="1"></section>
+    <section id="panel-edit" class="panel" data-step="2" hidden></section>
+    <section id="panel-export" class="panel" data-step="3" hidden></section>
+  </main>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <script src="js/core/state.js"></script>
+  <script src="js/core/history.js"></script>
+  <script src="js/core/storage.js"></script>
+  <script src="js/core/ratelimit.js"></script>
+  <script src="js/api/client.js"></script>
+  <script src="js/api/models.js"></script>
+  <script src="js/api/vision.js"></script>
+  <script src="js/api/imagegen.js"></script>
+  <script src="js/model/types.js"></script>
+  <script src="js/model/serialize.js"></script>
+  <script src="js/processing/slicer.js"></script>
+  <script src="js/processing/inpaint.js"></script>
+  <script src="js/processing/pipeline.js"></script>
+  <script src="js/export/svg.js"></script>
+  <script src="js/view/dom.js"></script>
+  <script src="js/view/canvas.js"></script>
+  <script src="js/view/panels.js"></script>
+  <script src="js/view/panel-connect.js"></script>
+  <script src="js/view/panel-edit.js"></script>
+  <script src="js/view/panel-export.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
